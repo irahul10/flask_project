@@ -1,0 +1,18 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+
+<h1>Profile</h1>
+{% if result %}
+    <form method="post" action="admin_profile">
+        <p>Name : <input type="text" name="T1" value="{{result[0]}}" /></p>
+        <p>Address : <input type="text" name="T2" value="{{result[1]}}" /></p>
+        <p>Contact : <input type="text" name="T3" value="{{result[2]}}" /></p>
+        <p>Email : <input type="text" name="T4" value="{{result[3]}}" /></p>
+        <p>
+        <input type="submit" name="B1" id="B1" value="Save">
+    </p>
+    </form>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+
+<center>
+<h1>Student Registration</h1>
+
+<form id="form1" name="form1" method="post" action="student_registration">
+    <p>Name:</br>
+    <input type="text" name="T1" id="T1" />
+  </p>
+    <p>Branch:</br>
+    <input type="text" name="T2" id="T2" required/>
+  </p>
+    <p>rollno:</br>
+    <input type="text" name="T3" id="T3" required/>
+  </p>
+    <p>contact:</br>
+    <input type="text" name="T4" id="T4" required/>
+  </p>
+    <p>email:</br>
+    <input type="text" name="T5" id="T5" required/>
+  </p>
+
+    <p>Password:</br>
+        <input type="password" name="T6" id="T6"/>
+    </p>
+
+  <p>
+    <input type="submit" name="B1" id="B1" value="Register" />
+  </p>
+</form>
+
+    {% if result %}
+        {{result}}
+    {% endif %}
+</center>
+
+{% endblock %}

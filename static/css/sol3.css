@@ -1,0 +1,52 @@
+#main
+{
+	margin:0 auto;
+	height:auto;
+	width:100%;
+}
+#wrapper
+{
+	float:left;
+	height:auto;
+	width:100%;}
+#header
+{
+	float:left;
+	height:120px;
+	width:100%;
+	border:1px solid #000;
+}
+
+#middle
+{
+	float:left;
+	height:500px;
+	width:100%;
+	border:1px solid #000;
+}
+#content1
+{
+	float:left;
+	height:350px;
+	width:800px;
+	margin:0px;
+	background-size:100% 100%;
+	color:#000;}
+#content2
+{
+	float:left;
+	height:350px;
+	width:570px;
+	margin:35px;
+	
+	background-size:100% 100%;}
+#footer
+{
+	float:left;
+	margin:0px;
+	height:50px;
+	text-align:center;
+	width:100%;
+	border:1px solid #000;
+	}
+	

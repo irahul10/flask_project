@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+{% block m1 %}
+
+
+<h1>Authorization Error</h1>
+<h3>You are not the authorized user.</h3>
+<p><a href="login"> Goto Login</a></p>
+
+{% if data %}
+{{data}}
+{% elif u %}
+{{u}}
+{% endif %}
+
+{% endblock %}

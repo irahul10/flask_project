@@ -1,0 +1,22 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+<center>
+<h1>Admin Home</h1>
+    <p><a href="admin_registration">admin_registration</a></p>
+<p><a href="show_admin">show_admin</a></p>
+<p><a href="student_registration">student_registration</a></p>
+<p><a href="show_student">show_student</a></p>
+<p><a href="admin_profile">admin_profile</a></p>
+<p><a href="admin_change_password">admin_change_password</a></p>
+<p><a href="logout">Logout</a> </p>
+
+{% if e1 %}
+<h2>{{e1}}</h2>
+{% endif %}
+
+{% if e2 %}
+    <h2>{{e2}}</h2>
+{% endif %}
+</center>
+{% endblock %}

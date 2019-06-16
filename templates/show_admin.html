@@ -1,0 +1,20 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+
+<h1>Admin Data</h1>
+{% for row in result %}
+<h3>Name:{{ row[0] }}</h3>
+
+    Address:{{ row[1] }}<br/>
+    Contact:{{ row[2] }}<br/>
+    Email:{{ row[3] }}<br/>
+    <form method="post" action="edit_admin.html">
+        <input type="hidden" name="email" value="{{ row[3] }}">
+        <input type="submit" name="B1" value="Edit">
+    </form>
+</p>
+
+{% endfor %}
+
+{% endblock %}

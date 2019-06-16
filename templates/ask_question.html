@@ -1,0 +1,24 @@
+{% extends 'template2.html' %}
+{% block m3 %}
+
+<center>
+<h1>Ask Question</h1>
+<form name="form1" method="post" action="ask_question">
+    <p>Subject:</br>
+        <input type="text" name="T1" id="T1" />
+    </p>
+
+    <p>Question:</br>
+        <textarea name="T2" id="T2" rows="5" cols="60" ></textarea>
+    </p>
+
+    <p>
+        <input type="submit" name="B1" value="submit"/>
+    </p>
+</form>
+</center>
+{% if result %}
+    {{result}}
+{% endif %}
+
+{% endblock %}

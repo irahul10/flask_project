@@ -1,0 +1,19 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+
+<h1>Edit and Save</h1>
+{% if result %}
+    <form method="post" action="delete_student1">
+    <p>Name <input type="text" name="T1" value="{{ result[0] }}"/></p>
+    <p>Branch <input type="text" name="T2" value="{{ result[1] }}"/></p>
+    <p>Rollno <input type="text" name="T3" value="{{ result[2] }}"/></p>
+    <p>Contact <input type="text" name="T4" value="{{ result[3] }}"/></p>
+    <p>Email <input type="text" name="T5" value="{{ result[4] }}"/></p>
+    <p><input type="submit" name="B1" value="Delete Record"/></p>
+    </form>
+{% elif result1 %}
+    <h2>{{result1}}</h2>
+{% endif %}
+
+{% endblock %}

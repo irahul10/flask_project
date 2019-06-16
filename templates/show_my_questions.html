@@ -1,0 +1,12 @@
+{% extends 'template2.html' %}
+{% block m3 %}
+<h1>My Questions</h1>
+{% for row in result %}
+    <p>qno: {{row[0]}}</p>
+    <p>question: {{ row[2] }}</p>
+    <p>qdata: {{row[3]}}</p>
+
+
+{% endfor %}
+
+{% endblock %}

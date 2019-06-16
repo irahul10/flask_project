@@ -1,0 +1,58 @@
+#main
+{
+	margin:0 auto;
+	height:auto;
+	width:100%;
+}
+#wrapper
+{
+	float:left;
+	height:auto;
+	width:100%;}
+#header
+{
+	float:left;
+	height:150px;
+	width:100%;
+	border:1px solid #000;
+}
+
+#middle
+{
+	float:left;
+	height:500px;
+	width:100%;
+	border:1px solid #000;
+}
+#content1
+{
+	float:left;
+	height:500px;
+	width:30%;
+	margin:0px;
+	background-size:100% 100%;
+	color:#000;}
+#content2
+{
+	float:left;
+	height:500px;
+	width:40%;
+	border:1px solid #000;
+	background-size:100% 100%;}
+#content3
+{
+	float:left;
+	height:800px;
+	width:20%;
+	margin:25px;}	
+
+#footer
+{
+	float:left;
+	margin:0px;
+	height:50px;
+	text-align:center;
+	width:100%;
+	border:1px solid #000;
+	}
+	

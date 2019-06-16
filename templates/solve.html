@@ -1,0 +1,19 @@
+{% extends 'template2.html' %}
+{% block m3 %}
+
+<h1>Solve</h1>
+
+{% if row %}
+    <h3>Subject:{{ row[1] }}</h3>
+    <p>question:{{ row[2] }}</p>
+{% endif %}
+
+<form method="post" action="solve1">
+    <input type="hidden" name="H1" value="{{row[0]}}" />
+    <p>
+        Answer <textarea name="T1" rows="5" cols="60"></textarea></p>
+    <p><input type="submit" name="B1" value="Save" /></p>
+
+</form>
+
+{% endblock %}

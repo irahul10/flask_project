@@ -1,0 +1,23 @@
+{% extends 'template3.html' %}
+{% block m2 %}
+
+<h1>Student Data</h1>
+{% for row in result %}
+    <h3>Name : {{ row[0] }}</h3>
+    <p>
+        Branch : {{ row[1] }}<br />
+        Rollno: {{ row[2] }}<br />
+        Contact: {{ row[3] }}<br />
+        Email : {{ row[4] }}<br />
+        <form method="post" action="edit_student">
+            <input type="hidden" name="email" value="{{ row[4] }}" />
+            <input type="submit" name="B1" value="Edit" />
+        </form>
+
+        <form method="post" action="delete_student">
+            <input type="hidden" name="email" value="{{ row[4] }}"/>
+            <input type="submit" name="B2" value="Delete">
+        </form>
+    </p>
+{% endfor %}
+{% endblock %}

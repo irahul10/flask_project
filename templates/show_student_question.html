@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+{% block m1 %}
+
+<h1>Show Questions</h1>
+{% for row in result %}
+    <h3>Subject:{{ row[1] }}</h3>
+    <p>question:{{ row[2] }}</p>
+    <form method="post" action="solve">
+        <input type="hidden" name="H1" value="{{row[0]}}" />
+        <input type="submit" name="B1" value="Solve" />
+    </form>
+
+{% endfor %}
+
+{% endblock %}
